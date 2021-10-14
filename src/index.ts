@@ -9,9 +9,9 @@ import { Telegraf } from "telegraf";
 if (!process.env.TELEGRAM_BOT_TOKEN) throw new Error("Please add a bot token");
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
-bot.start(ctx => ctx.reply("Welcome"));
+bot.start(ctx => ctx.reply("Welcome! Waaasuup?"));
 bot.hears("hello", ctx => {
-  ctx.reply("Hello to you too!");
+  ctx.reply("Hello to you too! My friend!!");
 });
 
 bot.launch();
